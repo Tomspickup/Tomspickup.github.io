@@ -52,10 +52,12 @@ p {
 }
 
 /* Title */
+.container-fluid {
+  width: 100%;
+}
+
 #title .container-fluid {
   padding-top: 2%;
-  padding-left: 12%;
-  padding-right: 12%;
   padding-bottom: 7%;
   text-align: left;
 }
@@ -75,9 +77,10 @@ p {
 /* title image */
 .picmockup {
   position: relative;
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
-  text-align: center;
+  margin: auto;
+  display: block;
 }
 
 .navbar {
@@ -272,7 +275,7 @@ nav.fill ul li a:hover:after {
   margin: auto;
 }
 
-@media (max-width : 990px) {
+@media (max-width : 900px) {
   #title {
     text-align: center;
   }
