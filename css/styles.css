@@ -263,11 +263,21 @@ nav.fill ul li a:hover:after {
 .space1 {
   margin: auto;
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 .space1:hover {
   color: #694E4E;
+  text-decoration: none;
+}
+
+.lineid {
+  position: relative;
+  padding-top: 1rem;
+  max-width: 15%;
+  max-height: 8%;
+  text-align: center;
 }
 
 /* Footer */
