@@ -42,6 +42,13 @@ p {
   color: #ffff;
 }
 
+
+.darkgrey-section {
+  background-color: #0F0E0E;
+  color: #ffff;
+}
+
+
 .white-section {
   background-color: #ffff;
 }
@@ -51,6 +58,10 @@ p {
 
 }
 
+.light-grey-section {
+  background-color: #F0F0F0;
+
+}
 /* Title */
 .container-fluid {
   width: 100%;
@@ -73,6 +84,15 @@ p {
   color: #694E4E;
 }
 
+.space3 {
+  margin: auto;
+  font-size: 1.5rem;
+  color: #c7c6c6
+}
+
+.space3:hover {
+  color: #ECF2FF;
+}
 
 /* title image */
 .picmockup {
@@ -81,10 +101,11 @@ p {
   height: auto;
   margin: auto;
   display: block;
+  padding-top: 3% ;
 }
 
 .navbar {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .nav-item {
@@ -102,12 +123,12 @@ p {
 .nav-link {
   font-size: 1.1rem;
   font-family: 'Bai Jamjuree', sans-serif;
-  color: #9D9D9D;
+  color: #3F2E3E;
   padding: 3px;
 }
 
 .nav-link:hover {
-  color: #151515;
+  color: #040D12;
 }
 
 .navbar-custom {
@@ -196,7 +217,7 @@ nav.fill ul li a:hover:after {
   width: 80%;
 }
 .bg-container1 {
-  padding: 5%;
+  padding: 1.5% 5% 1.5% 5%;
 }
 
 .space {
@@ -205,7 +226,7 @@ nav.fill ul li a:hover:after {
 }
 
 .space:hover {
-  color: #FF5959;
+  color: #95BDFF;
 }
 
 /*review*/
