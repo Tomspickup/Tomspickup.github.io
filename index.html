@@ -1,222 +1,378 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="th">
 <head>
   <meta charset="utf-8">
-  <title>TOM's Pickup เหล็กกันโคลงสำหรับรถกระบะ คุณภาพฝีมือคนไทย</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="meta-title" data-i18n-meta="homeMetaTitle">TOM's Pickup | เหล็กกันโคลงสำหรับรถกระบะ</title>
+  <meta id="meta-description" data-i18n-meta="homeMetaDescription" name="description" content="เหล็กกันโคลง TOM's Pickup สำหรับรถกระบะทุกรุ่น ช่วยลดอาการโคลง ท้ายปัด และเพิ่มความมั่นใจเวลาเข้าโค้ง พร้อมให้คำแนะนำก่อนสั่งซื้อและจัดส่งทั่วประเทศ">
+  <meta id="meta-og-title" data-i18n-meta="homeMetaOgTitle" property="og:title" content="TOM's Pickup | เหล็กกันโคลงสำหรับรถกระบะ">
+  <meta id="meta-og-description" data-i18n-meta="homeMetaOgDescription" property="og:description" content="ใช้ได้กับรถกระบะทุกรุ่น ช่วยลดอาการโคลง ท้ายปัด เข้าโค้งมั่นใจกว่าเดิม พร้อมให้คำแนะนำก่อนสั่งซื้อและจัดส่งทั่วประเทศ">
+  <meta property="og:image" content="images/Header.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="th_TH">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#111111">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
-<body>
-  <section class="colored-section" id="title">
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-xl navbar-custom navbar-text stroke">
-        <a class="navbar-brand" href="#">TOM's Stabilizer Bar</a>
-        <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#benefit">ประโยชน์ของเหล็กกันโคลง</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#whyus">ทำไมต้องเรา</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#review">รีวิวจากผู้ใช้งานจริง</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#payment">ช่องทางการชำระเงิน</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contactus">ช่องทางการติดต่อ</a>
-            </li>
-          </ul>
+<body data-page="home">
+  <header class="hero" id="top">
+    <div class="hero__bg"></div>
+    <div class="container">
+      <nav class="site-nav">
+        <a class="brand" href="#top">TOM's Pickup</a>
+        <div class="site-nav__links">
+          <a href="#benefits" data-i18n="navBenefits">จุดเด่น</a>
+          <a href="#products" data-i18n="navProducts">สินค้า</a>
+          <a href="#reviews" data-i18n="navReviews">รีวิว</a>
+          <a href="#pricing" data-i18n="navPricing">ราคา</a>
+          <a href="#inquiry" data-i18n="navInquiry">สอบถามรุ่นรถ</a>
+          <a href="#contact" data-i18n="navContact">ติดต่อ</a>
+        </div>
+        <div class="lang-switch" aria-label="Language switcher">
+          <button class="lang-switch__button is-active" data-lang="th" type="button">TH</button>
+          <button class="lang-switch__button" data-lang="en" type="button">EN</button>
         </div>
       </nav>
-      <!-- Title -->
 
-
-      <h1 class="big-heading">ขับขี่ปลอดภัย เลือกใช้เหล็กกันโคลง TOM's </h1>
-
-      <img class="picmockup" src="images/Header.jpg" alt="Header-info">
-
-
-    </div>
-  </section>
-
-  <!-- "How useful it is? -->
-<section class="grey-section" id="benefit">
-  <div class="container-fluid bg-container">
-
-    <h2 class="pt-5 mt-5 section-heading"> ประโยชน์ของเหล็กกันโคลง</h2>
-    <h3 class="space2 feature-desc"><i class="fa fa-lightbulb-o" style="font-size: 3rem;"></i> เหล็กกันโคลงมีหน้าที่รักษาสมดุลของรถยนต์ในกรณีที่ทำการเข้าโค้งเพื่อไม่ให้ตัวรถเกิดการเสียสมดุลและแหกโค้ง
-      ส่วนจะมากหรือน้อยขึ้นอยู่กับรัศมีความโค้งของถนนมุมเอียงขึ้นรับกับโค้งของถนน องศาการหักเลี้ยวของพวงมาลัยและความเร็วในการเข้าโค้ง</h3>
-
-    <h3 class="space2 feature-desc"><i class="fa fa-lightbulb-o" style="font-size: 3rem;"></i>เหล็กกันโคลง มีหน้าที่หลักคือลดอาการโคลง ท้ายปัด รถร่อน โดยเฉพาะรถกระบะ ที่นิยมติดกันโคลงรถ
-      ถึงแม้ว่ารถกระบะจะมีความกระด้างเพราะได้รับการเซ็ทช่วงล่างมาเพื่อบรรทุกสิ่งของโดยเฉพาะ สามารถรับน้ำหนักได้ประมาณ 1-2 ตัน ถ้าหากไม่มีการบรรทุกจะทำให้ท้ายกระบะเบา รถก็จะดีดและโคลง ยิ่งถ้าต้องขับบนเส้นทางขรุขระ เป็นหลุมเป็นบ่อ ขับขณะที่ฝนตก ถนนลื่น
-      เมื่อรถจำเป็นต้องเบรก ล้อรถจะไม่เกาะถนนและท้ายรถก็จะปัด เหล็กกันโคลงนี้เองที่จะช่วยให้รถไม่โคลง สามารถช่วยให้การขับขี่ปลอดภัยมากยิ่งขึ้น</h3>
-
-  </div>
-
-
-</section>
-
-
-  <!-- Why?? -->
-  <section class="white-section" id="whyus">
-    <div class="container-fluid">
-
-      <div class="row g-0">
-        <div class="bg-container1 col-lg-4">
-          <i class="space bi bi-check2-circle" style="font-size: 3rem;"></i>
-          <h3 class="underline feature-title"> ผลิตจากเหล็กกล้าเส้นเดียว</h3>
-          <p>เพิ่มสมรรถนะการเข้าโค้งได้อย่างมั่นใจ</p>
-
+      <div class="hero__content">
+        <div class="hero__copy">
+          <span class="eyebrow" data-i18n="heroEyebrow">Stabilizer Bar For Pickup Trucks</span>
+          <h1 data-i18n="heroTitle">ช่วยลดอาการโคลง ท้ายปัด และอาการเสียทรง ให้รถกระบะขับนิ่งและมั่นใจขึ้น</h1>
+          <p class="hero__lead" data-i18n="heroLead">
+            เหล็กกันโคลง TOM's Pickup ช่วยให้รถกระบะทรงตัวดีขึ้นในจังหวะเข้าโค้ง
+            เปลี่ยนเลน เบรกกะทันหัน และวิ่งบนถนนไม่เรียบ ใช้ได้กับรถกระบะทุกรุ่น
+            ถ้าไม่แน่ใจเรื่องรุ่นรถหรือการติดตั้ง สอบถามก่อนได้โดยตรง
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="tel:0863671941" data-i18n="heroCtaPrimary">โทรสั่งซื้อทันที</a>
+            <a class="button button--secondary" href="https://line.me/ti/p/elz93Zxtd1#~" data-i18n="heroCtaSecondary">คุยทางไลน์</a>
+            <a class="button button--ghost-light" href="#inquiry" data-i18n="heroCtaTertiary">ส่งรายละเอียดรถก่อนสั่งซื้อ</a>
+          </div>
+          <ul class="hero__facts">
+            <li data-i18n="factPrice">ราคาเดียว 3,500 บาท</li>
+            <li data-i18n="factFitment">ใช้ได้กับกระบะทุกรุ่น</li>
+            <li data-i18n="factShipping">ฟรีค่าส่งทั่วประเทศ</li>
+            <li data-i18n="factSupport">ให้คำแนะนำการติดตั้ง</li>
+          </ul>
         </div>
-        <div class="bg-container1 col-lg-4">
-          <i class="space bi bi-check2-circle" style="font-size: 3rem;"></i>
-          <h3 class="underline feature-title">สร้างความสมดุลให้ตัวรถ</h3>
-          <p> ช่วยถ่วงน้ำหนักลดได้ดี ลดอาการท้ายดิ้น</p>
 
-        </div>
-        <div class="bg-container1 col-lg-4">
-          <i class="space bi bi-check2-circle" style="font-size: 3rem;"></i>
-          <h3 class="underline feature-title"> การันตีเห็นผลจริง </h3>
-          <p> ติดตั้งง่าย พร้อมให้คำแนะนำในทุกขั้นตอน</p>
+        <div class="hero__media">
+          <div class="hero-card">
+            <img src="images/Header.jpg" alt="เหล็กกันโคลง TOM's Pickup สำหรับรถกระบะ" data-i18n-alt="heroImageAlt">
+            <div class="hero-card__detail">
+              <strong data-i18n="heroCardTitle">งานเหล็กสำหรับรถกระบะ</strong>
+              <span data-i18n="heroCardText">งานสำหรับรถใช้งานจริง ช่วยให้ขับมั่นใจขึ้นทั้งวิ่งเปล่าและเดินทางไกล</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- review -->
-
-  <section class="colored-section" id="review">
-
-    <div id="testimonials-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-      <div class="carousel-inner">
-        <h2 class="testimonials-text underline"> รวมภาพผลิตภัณฑ์และรีวิวจากผู้ใช้งานจริง</h2>
-        <div class="carousel-item active container-fluid">
-
-          <img class="testimonials-image" src="images/product00.jpg" alt="product00">
-
+  <main>
+    <section class="section section--light" id="benefits">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="benefitsEyebrow">เหตุผลที่ควรติดตั้ง</span>
+          <h2 data-i18n="benefitsTitle">ทำไมรถกระบะถึงควรมีเหล็กกันโคลง</h2>
+          <p data-i18n="benefitsLead">
+            รถกระบะจำนวนมากมีอาการท้ายเบา โยนตัว หรือเสียอาการง่ายกว่ารถเก๋ง
+            โดยเฉพาะตอนวิ่งเปล่า เข้าโค้งเร็ว เบรกแรง หรือเจอถนนขรุขระ เหล็กกันโคลงช่วยลดอาการเหล่านี้
+            และทำให้ควบคุมรถได้มั่นใจขึ้น
+          </p>
         </div>
 
- <div class="carousel-item container-fluid">
-
-          <img class="testimonials-image" src="images/product01.JPG" alt="product02">
-
-        </div>
-
-        <div class="carousel-item container-fluid">
-
-          <img class="testimonials-image" src="images/product02.JPG" alt="product02">
-
-        </div>
-
-        <div class="carousel-item container-fluid">
-
-          <img class="testimonials-image" src="images/product03.JPG" alt="product03">
-
-        </div>
-
-        <div class="carousel-item container-fluid">
-
-          <img class="testimonials-image" src="images/product04.JPG" alt="product04">
-
-        </div>
-
-        <div class="carousel-item container-fluid">
-
-          <img class="testimonials-image" src="images/product05.JPG" alt="product05">
-
-        </div>
-
-  <div class="carousel-item container-fluid">
-
-          <img class="testimonials-image" src="images/review01.jpeg" alt="review01">
-
-        </div>
-
-
-
-        <div class="carousel-item container-fluid">
-
-          <img class="testimonials-image" src="images/review02.jpeg" alt="review02">
-
-        </div>
-
-
-
-        <div class="carousel-item container-fluid">
-
-          <img class="testimonials-image" src="images/review03.jpg" alt="review03">
-
+        <div class="grid grid--three">
+          <article class="info-card">
+            <i class="bi bi-sign-turn-right"></i>
+            <h3 data-i18n="benefit1Title">เข้าโค้งนิ่งขึ้น</h3>
+            <p data-i18n="benefit1Text">ช่วยลดอาการเอียงและโคลงของตัวรถ ทำให้รถตอบสนองนิ่งขึ้นเวลาเข้าโค้ง</p>
+          </article>
+          <article class="info-card">
+            <i class="bi bi-shield-check"></i>
+            <h3 data-i18n="benefit2Title">ลดความเสี่ยงท้ายปัด</h3>
+            <p data-i18n="benefit2Text">เสริมสมดุลรถในจังหวะเบรกหรือเปลี่ยนเลนกะทันหัน โดยเฉพาะตอนถนนลื่นหรือผิวทางไม่เรียบ</p>
+          </article>
+          <article class="info-card">
+            <i class="bi bi-truck"></i>
+            <h3 data-i18n="benefit3Title">เหมาะกับการใช้งานจริง</h3>
+            <p data-i18n="benefit3Text">เหมาะทั้งรถใช้งานประจำ รถวิ่งงาน และรถบรรทุกที่ต้องการความมั่นคงของช่วงล่างมากขึ้น</p>
+          </article>
         </div>
       </div>
+    </section>
 
-      <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section-heading section-heading--centered">
+          <span class="eyebrow" data-i18n="whyEyebrow">จุดเด่นของ TOM's</span>
+          <h2 data-i18n="whyTitle">ของจริง เน้นผลลัพธ์หลังติดตั้ง</h2>
+        </div>
 
-    </div>
-
-  </section>
-
-  <!-- Payment -->
-
-  <section class="white-section" id="payment">
-
-    <div class="sp mt-4">
-      <div class="cent m-5">
-        <h2 class="section-heading"> โปรโมชั่นสุดคุ้ม เพียง 3,500 บาท ทุกรุ่น ทุกยี่ห้อ </h2>
-        <h3> พร้อมฟรีค่าจัดส่งทั่วประเทศ มูลค่า250บาท</h3>
+        <div class="feature-panel">
+          <article class="feature-panel__item">
+            <span class="feature-panel__number">01</span>
+            <h3 data-i18n="why1Title">ผลิตจากเหล็กกล้าเส้นเดียว</h3>
+            <p data-i18n="why1Text">โครงสร้างแข็งแรง งานเรียบง่ายแต่เน้นความทนและการใช้งานระยะยาวกับรถกระบะจริง</p>
+          </article>
+          <article class="feature-panel__item">
+            <span class="feature-panel__number">02</span>
+            <h3 data-i18n="why2Title">ติดตั้งแล้วเห็นอาการรถเปลี่ยน</h3>
+            <p data-i18n="why2Text">ช่วยลดอาการโคลง ท้ายดิ้น และทำให้ฟีลการควบคุมรถกระชับขึ้นอย่างรู้สึกได้</p>
+          </article>
+          <article class="feature-panel__item">
+            <span class="feature-panel__number">03</span>
+            <h3 data-i18n="why3Title">มีคำแนะนำก่อนและหลังสั่งซื้อ</h3>
+            <p data-i18n="why3Text">หากไม่แน่ใจเรื่องรุ่นรถหรือการติดตั้ง สามารถสอบถามก่อนสั่งซื้อได้โดยตรง</p>
+          </article>
+        </div>
       </div>
-      <img class="paymentdetail" src="images/payment.jpg" alt="BankDetails">
+    </section>
 
+    <section class="section section--light" id="fitment">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="fitmentEyebrow">รองรับรุ่นรถ</span>
+          <h2 data-i18n="fitmentTitle">รองรับรถกระบะทุกรุ่น ถ้าไม่แน่ใจถามก่อนได้</h2>
+          <p data-i18n="fitmentLead">
+            ลูกค้าสามารถสอบถามเข้ามาได้ทุกยี่ห้อ ทุกโมเดล และทุกลักษณะการใช้งาน
+            หากไม่แน่ใจว่ารถของคุณเหมาะกับงานติดตั้งแบบไหน ทางร้านช่วยแนะนำให้ก่อนสั่งซื้อได้
+          </p>
+        </div>
+
+        <div class="fitment-banner">
+          <div class="fitment-banner__main">
+            <strong data-i18n="fitmentBannerTitle">ใช้ได้กับรถกระบะทุกรุ่น</strong>
+            <p data-i18n="fitmentBannerText">แจ้งรุ่นรถ ลักษณะการใช้งาน หรือส่งรูปใต้ท้องรถมาทางไลน์ได้ เพื่อเช็กก่อนสั่งซื้อให้ชัดเจน</p>
+          </div>
+          <div class="fitment-banner__actions">
+            <a class="button button--dark" href="tel:0863671941" data-i18n="fitmentCtaPrimary">โทรสอบถาม</a>
+            <a class="button button--ghost" href="https://line.me/ti/p/elz93Zxtd1#~" data-i18n="fitmentCtaSecondary">ส่งรูปหรือรุ่นรถทางไลน์</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="products">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="productsEyebrow">ภาพสินค้า</span>
+          <h2 data-i18n="productsTitle">ภาพสินค้าและงานติดตั้ง</h2>
+          <p data-i18n="productsLead">ภาพสินค้าจริงและตัวอย่างงานติดตั้ง เพื่อให้เห็นรายละเอียดก่อนตัดสินใจสั่งซื้อ</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery__item">
+            <img src="images/product01.JPG" alt="ตัวอย่างเหล็กกันโคลงสำหรับรถกระบะ" data-i18n-alt="productAlt2">
+          </figure>
+          <figure class="gallery__item">
+            <img src="images/product02.JPG" alt="รายละเอียดงานเหล็กกันโคลง" data-i18n-alt="productAlt3">
+          </figure>
+          <figure class="gallery__item">
+            <img src="images/product03.JPG" alt="ตัวอย่างการติดตั้งเหล็กกันโคลง" data-i18n-alt="productAlt4">
+          </figure>
+          <figure class="gallery__item">
+            <img src="images/product04.JPG" alt="ภาพใช้งานสินค้า TOM's Pickup" data-i18n-alt="productAlt5">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sand" id="reviews">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="reviewsEyebrow">เสียงจากลูกค้า</span>
+          <h2 data-i18n="reviewsTitle">รีวิวจากผู้ใช้งานจริง</h2>
+          <p data-i18n="reviewsLead">ภาพรีวิวและข้อความจากลูกค้าที่ใช้งานจริง สะท้อนผลลัพธ์หลังติดตั้งและความรู้สึกเวลาใช้งานบนถนนจริง</p>
+        </div>
+
+        <div class="review-grid review-grid--text">
+          <article class="review-note review-note--wide">
+            <span class="review-note__label" data-i18n="reviewTagFeatured">รีวิวเด่น</span>
+            <h3 data-i18n="reviewSummaryTitle">ผลลัพธ์ที่ลูกค้าพูดถึงบ่อย</h3>
+            <p data-i18n="reviewSummaryText">หลังติดตั้ง ลูกค้ามักพูดถึงความนิ่งขึ้นของรถ ความมั่นใจเวลาเข้าโค้ง และความรู้สึกว่ารถควบคุมง่ายขึ้นเวลาใช้งานจริง</p>
+          </article>
+          <blockquote class="review-quote-card" data-i18n="quote1">"ใส่ง่าย งานเรียบร้อย ใช้งานจริงแล้วมั่นใจขึ้น"</blockquote>
+          <blockquote class="review-quote-card" data-i18n="quote2">"ขับนิ่งขึ้นชัดเจน โดยเฉพาะเวลาวิ่งทางไกลและเจอทางโค้ง"</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--accent" id="pricing">
+      <div class="container pricing">
+        <div class="pricing__copy">
+          <span class="eyebrow" data-i18n="pricingEyebrow">ข้อเสนอพิเศษ</span>
+          <h2 data-i18n="pricingTitle">3,500 บาท ทุกรุ่น ทุกยี่ห้อ</h2>
+          <p data-i18n="pricingLead">
+            ราคาชัดเจน สั่งซื้อง่าย พร้อมฟรีค่าจัดส่งทั่วประเทศ มูลค่า 250 บาท
+            เหมาะสำหรับคนที่ต้องการเพิ่มความมั่นใจในการขับรถกระบะ โดยจบในงบที่คุ้มค่า
+          </p>
+          <ul class="pricing__list">
+            <li data-i18n="pricingList1">ให้คำแนะนำก่อนสั่งซื้อและก่อนติดตั้ง</li>
+            <li data-i18n="pricingList2">มีช่องทางติดต่อทั้งโทรศัพท์ เฟซบุ๊ก และไลน์</li>
+            <li data-i18n="pricingList3">ใช้ภาพบัญชีเดิมสำหรับการโอนชำระ</li>
+          </ul>
+        </div>
+        <div class="pricing__media">
+          <img src="images/payment.jpg" alt="รายละเอียดบัญชีสำหรับชำระเงิน" data-i18n-alt="paymentAlt">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="inquiry">
+      <div class="container inquiry">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="inquiryEyebrow">ส่งข้อมูลเบื้องต้น</span>
+          <h2 data-i18n="inquiryTitle">ส่งรายละเอียดรถไว้ก่อน เดี๋ยวคุยต่อได้ง่ายกว่า</h2>
+          <p data-i18n="inquiryLead">กรอกข้อมูลเบื้องต้นไว้ก่อนเพื่อให้ทางร้านช่วยเช็กรุ่นรถ ลักษณะการใช้งาน และแนวทางติดตั้งได้เร็วขึ้น หลังส่งแล้วระบบจะพาไปหน้าสรุปข้อมูลพร้อมปุ่มติดต่อทันที</p>
+        </div>
+
+        <div class="inquiry-layout">
+          <form class="inquiry-form" id="inquiry-form">
+            <div class="form-grid">
+              <label class="form-field">
+                <span data-i18n="formNameLabel">ชื่อผู้ติดต่อ</span>
+                <input type="text" name="customerName" data-i18n-placeholder="formNamePlaceholder" placeholder="ชื่อเล่นหรือชื่อที่สะดวกให้ติดต่อ">
+              </label>
+              <label class="form-field">
+                <span data-i18n="formTruckLabel">รุ่นรถ / ยี่ห้อ / ปี</span>
+                <input type="text" name="truckDetails" required data-i18n-placeholder="formTruckPlaceholder" placeholder="เช่น Hilux Revo 4 ประตู ปี 2021">
+              </label>
+              <label class="form-field">
+                <span data-i18n="formUsageLabel">ลักษณะการใช้งาน</span>
+                <select name="usageType" required>
+                  <option value="" data-i18n="formUsagePlaceholder">เลือกการใช้งานหลัก</option>
+                  <option value="daily" data-i18n="usageDaily">ใช้งานประจำ / วิ่งในเมือง</option>
+                  <option value="cargo" data-i18n="usageCargo">วิ่งงาน / บรรทุกของ</option>
+                  <option value="mixed" data-i18n="usageMixed">ใช้งานผสม ทั้งวิ่งเปล่าและบรรทุก</option>
+                  <option value="travel" data-i18n="usageTravel">เดินทางไกล / ต่างจังหวัด</option>
+                </select>
+              </label>
+              <label class="form-field">
+                <span data-i18n="formContactLabel">ช่องทางที่สะดวกให้ติดต่อกลับ</span>
+                <select name="preferredContact" required>
+                  <option value="" data-i18n="formContactPlaceholder">เลือกช่องทางติดต่อ</option>
+                  <option value="line" data-i18n="contactOptionLine">ไลน์</option>
+                  <option value="phone" data-i18n="contactOptionPhone">โทรศัพท์</option>
+                  <option value="facebook" data-i18n="contactOptionFacebook">เฟซบุ๊ก</option>
+                </select>
+              </label>
+              <label class="form-field form-field--full">
+                <span data-i18n="formSymptomsLabel">อาการรถหรือสิ่งที่อยากปรับ</span>
+                <textarea name="symptoms" rows="4" required data-i18n-placeholder="formSymptomsPlaceholder" placeholder="เช่น ท้ายเบา เข้าโค้งแล้วรู้สึกโยน วิ่งทางไกลอยากให้นิ่งขึ้น"></textarea>
+              </label>
+              <label class="form-field">
+                <span data-i18n="formProvinceLabel">จังหวัดหรือพื้นที่ใช้งาน</span>
+                <input type="text" name="province" data-i18n-placeholder="formProvincePlaceholder" placeholder="เช่น เชียงใหม่ / กรุงเทพฯ">
+              </label>
+              <label class="form-field">
+                <span data-i18n="formNoteLabel">ข้อมูลเพิ่มเติม</span>
+                <input type="text" name="extraNote" data-i18n-placeholder="formNotePlaceholder" placeholder="เช่น ยกสูง ใส่ล้อใหญ่ หรืออยากส่งรูปใต้ท้องรถเพิ่ม">
+              </label>
+            </div>
+
+            <div class="inquiry-form__actions">
+              <button class="button button--primary" type="submit" data-i18n="formSubmit">ส่งข้อมูลและไปหน้าสรุป</button>
+              <p class="form-note" data-i18n="formNote">หลังส่งข้อมูล ระบบจะพาไปหน้าสรุป พร้อมปุ่มคัดลอกข้อความและเปิดไลน์เพื่อแอดร้านก่อนคุยต่อ</p>
+            </div>
+          </form>
+
+          <aside class="inquiry-panel">
+            <span class="eyebrow" data-i18n="inquiryPanelEyebrow">ขั้นตอนถัดไป</span>
+            <h3 data-i18n="inquiryPanelTitle">สั้น กระชับ และพร้อมคุยต่อได้เลย</h3>
+            <ul class="inquiry-steps">
+              <li data-i18n="inquiryStep1">กรอกรุ่นรถและอาการที่อยากแก้</li>
+              <li data-i18n="inquiryStep2">ระบบสรุปข้อมูลให้ในหน้าถัดไป</li>
+              <li data-i18n="inquiryStep3">คัดลอกข้อความหรือเปิดไลน์เพื่อส่งต่อได้ทันที</li>
+            </ul>
+            <div class="inquiry-panel__hint">
+              <strong data-i18n="inquiryHintTitle">ยิ่งข้อมูลชัด ยิ่งตอบกลับได้เร็ว</strong>
+              <p data-i18n="inquiryHintText">ถ้ามีรูปใต้ท้องรถหรือรายละเอียดการใช้งานจริง สามารถส่งเพิ่มทางไลน์ได้หลังจากส่งฟอร์มนี้</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="faq">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="faqEyebrow">คำถามที่พบบ่อย</span>
+          <h2 data-i18n="faqTitle">คำถามที่ลูกค้ามักถามก่อนสั่งซื้อ</h2>
+          <p data-i18n="faqLead">ตอบข้อสงสัยเบื้องต้นให้ตัดสินใจง่ายขึ้น และถ้ารุ่นรถของคุณมีรายละเอียดเฉพาะสามารถสอบถามเพิ่มได้ทันที</p>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item">
+            <h3 data-i18n="faq1Title">ใช้ได้กับรถรุ่นไหนบ้าง</h3>
+            <p data-i18n="faq1Text">รองรับรถกระบะทุกรุ่น หากไม่แน่ใจสามารถแจ้งรุ่นรถเพื่อสอบถามความเหมาะสมก่อนสั่งซื้อได้</p>
+          </article>
+          <article class="faq-item">
+            <h3 data-i18n="faq2Title">ถ้าไม่แน่ใจว่ารถเหมาะกับแบบไหนต้องทำอย่างไร</h3>
+            <p data-i18n="faq2Text">ส่งรุ่นรถหรือรูปตัวรถมาทางไลน์ หรือโทรสอบถามได้โดยตรง ทางร้านช่วยแนะนำให้ก่อนตัดสินใจ</p>
+          </article>
+          <article class="faq-item">
+            <h3 data-i18n="faq3Title">มีค่าจัดส่งเพิ่มหรือไม่</h3>
+            <p data-i18n="faq3Text">ราคาปัจจุบัน 3,500 บาท พร้อมฟรีค่าจัดส่งทั่วประเทศ</p>
+          </article>
+          <article class="faq-item">
+            <h3 data-i18n="faq4Title">ติดต่อสั่งซื้อช่องทางไหนสะดวกที่สุด</h3>
+            <p data-i18n="faq4Text">โทรศัพท์เหมาะกับการคุยเร็ว ส่วนไลน์เหมาะกับการส่งรุ่นรถหรือภาพประกอบเพื่อเช็กข้อมูลก่อนสั่งซื้อ</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark section--contact" id="contact">
+      <div class="container contact">
+        <div class="contact__copy">
+          <span class="eyebrow" data-i18n="contactEyebrow">ช่องทางติดต่อ</span>
+          <h2 data-i18n="contactTitle">สนใจสั่งซื้อหรือสอบถามเพิ่มเติม</h2>
+          <p data-i18n="contactLead">ติดต่อได้โดยตรงเพื่อเช็กรุ่นรถ รายละเอียดการจัดส่ง และข้อมูลการติดตั้งก่อนสั่งซื้อ</p>
+
+          <div class="contact-list">
+            <a href="tel:0863671941"><i class="bi bi-telephone-fill"></i> <span data-i18n="contactPhone">โทร 086-367-1941</span></a>
+            <a href="https://www.facebook.com/Tomspickup/"><i class="bi bi-facebook"></i> <span data-i18n="contactFacebook">เฟซบุ๊ก: เหล็กกันโคลง Toms</span></a>
+            <a href="https://line.me/ti/p/elz93Zxtd1#~"><i class="bi bi-line"></i> <span data-i18n="contactLine">ไลน์ไอดี: pradit-toms</span></a>
+          </div>
+        </div>
+
+        <div class="contact__card">
+          <img src="images/lineid.jpg" alt="คิวอาร์โค้ดไลน์สำหรับติดต่อ TOM's Pickup" data-i18n-alt="lineQrAlt">
+          <p data-i18n="contactQrText">สแกนเพื่อสอบถามหรือสั่งซื้อได้ทันที</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p data-i18n="footerBrand">TOM's Pickup Stabilizer Bar</p>
+      <p data-i18n="footerOwner">คุณประดิษฐ์ อมรเลิศพานิช</p>
     </div>
-
-  </section>
-
-
-  <!-- Contact us -->
-
-  <section class="colored-section" id="contactus">
-    <div class="sp">
-      <h2 class="pt-5 mt-5 big-heading">สนใจติดต่อสั่งซื้อหรือสอบถาม</h2>
-      <p class="space1"><a class="space1" href="https://www.facebook.com/Tomspickup/"><i class="bi-facebook"></i>acebook เหล็กกันโคลง Toms</a> </p>
-      <p> <a class="space1" href="tel:0863671941"><i class="bi-phone" style="font-size: 1.5rem;"></i> ติดต่อ คุณ ประดิษฐ์ อมรเลิศพานิช  โทร 0863671941</a></p>
-      <p> <a class="space1" href="https://line.me/ti/p/elz93Zxtd1#~"> <i class="bi-chat-quote" style="font-size: 1.2rem;"></i> Line ID : pradit-toms</p>
-      <img class="lineid" src="images/lineid.jpg" alt="lineid"></a>
-    </div>
-  </section>
-
-
-  <!-- Footer -->
-
-  <footer class="white-section" id="footer">
-
-    <p class="mt-3">© Copyright Mint Amornlertpanit 2022</p>
-
   </footer>
 
+  <div class="floating-contact" data-i18n-aria-label="floatingLabel" aria-label="ช่องทางติดต่อด่วน">
+    <a class="floating-contact__item floating-contact__item--phone" href="tel:0863671941">
+      <i class="bi bi-telephone-fill"></i>
+      <span data-i18n="floatingPhone">โทร</span>
+    </a>
+    <a class="floating-contact__item floating-contact__item--line" href="https://line.me/ti/p/elz93Zxtd1#~">
+      <i class="bi bi-line"></i>
+      <span data-i18n="floatingLine">ไลน์</span>
+    </a>
+  </div>
 
+  <div class="lang-switch lang-switch--floating" aria-label="Mobile language switcher">
+    <button class="lang-switch__button is-active" data-lang="th" type="button">TH</button>
+    <button class="lang-switch__button" data-lang="en" type="button">EN</button>
+  </div>
+
+  <script src="main.js"></script>
 </body>
-
 </html>
